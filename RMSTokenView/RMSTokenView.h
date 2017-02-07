@@ -52,5 +52,6 @@
 
 - (void)tokenView:(RMSTokenView *)tokenView didChangeText:(NSString *)text;
 - (void)tokenView:(RMSTokenView *)tokenView didUpdateSummary:(NSString *)summary;
+- (void)tokenView:(RMSTokenView *)tokenView frameChanged:(CGRect)frame;
 
 @end

@@ -411,6 +411,10 @@
         [self scrollToBottom];
     }
     self.lastKnownSize = self.bounds.size;
+    
+    if ([self.tokenDelegate respondsToSelector:@selector(tokenView:frameChanged:)]) {
+        [self.tokenDelegate tokenView:self frameChanged:self.frame];
+    }
 }
 
 - (void)setBounds:(CGRect)bounds {
